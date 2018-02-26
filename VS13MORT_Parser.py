@@ -22,17 +22,17 @@
 #
 
 
-fileObj = open("C:\data\PO1\VS13MORT.DUSMCPUB",'r')
-fileOutObj = open("C:\data\PO1\VS13MORT.csv","a")
+fileObj = open("./2016_Mortality/VS16MORT.DUSMCPUB",'r')
+fileOutObj = open("./VS16MORT.csv","a")
 
-fileOutObj.write('Resident_Status, Education, Month_Of_Death, Sex, Age_Key, Age_Value, Age_Sub_Flag, Age_Recode_52, Age_Recode_27, ' + \
-                 'Age_Recode_12, Infant_Age_Recode_22, Place_Of_Death, Marital_Status, DOW_of_Death, Data_Year, Injured_At_Work, ' + \
-                 'Manner_Of_Death, Method_Of_Disposition, Autopsy, Activity_Code, Place_Of_Causal_Injury,  ICD10, Cause_Recode_358, ' + \
-                 'Cause_Recode_113, Infant_Cause_Recode_130, Cause_Recode_39, Entity_Axis_Conditions, EAC1, EAC2, EAC3, EAC4, EAC5, ' + \
-                 'EAC6, EAC7, EAC8, EAC9, EAC10, EAC11, EAC12, EAC13, EAC14, EAC15, EAC16, EAC17, EAC18, EAC19, EAC20, ' + \
-                 'Record_Axis_Conditions, RA1, RA2, RA3, RA4, RA5, RA6, RA7, RA8, RA9, RA10, RA11, RA12, RA13, RA14, ' + \
-                 'RA15, RA16, RA17, RA18, RA19, RA20, Race, Race_Bridged, Race_Imputation, Race_Recode_3, Race_Recode_5, ' + \
-                 'Hispanic_Origin, Hispanic_Origin_Recode\n')
+fileOutObj.write('Resident_Status,Education,Month_Of_Death,Sex,Age_Key,Age_Value,Age_Sub_Flag,Age_Recode_52,Age_Recode_27,' + \
+                 'Age_Recode_12,Infant_Age_Recode_22,Place_Of_Death,Marital_Status,DOW_of_Death,Data_Year,Injured_At_Work,' + \
+                 'Manner_Of_Death,Method_Of_Disposition,Autopsy,Activity_Code,Place_Of_Causal_Injury,ICD10,Cause_Recode_358,' + \
+                 'Cause_Recode_113,Infant_Cause_Recode_130,Cause_Recode_39,Entity_Axis_Conditions,EAC1,EAC2,EAC3,EAC4,EAC5,' + \
+                 'EAC6,EAC7,EAC8,EAC9,EAC10,EAC11,EAC12,EAC13,EAC14,EAC15,EAC16,EAC17,EAC18,EAC19,EAC20,' + \
+                 'Record_Axis_Conditions,RA1,RA2,RA3,RA4,RA5,RA6,RA7,RA8,RA9,RA10,RA11,RA12,RA13,RA14,' + \
+                 'RA15,RA16,RA17,RA18,RA19,RA20,Race,Race_Bridged,Race_Imputation,Race_Recode_3,Race_Recode_5,' + \
+                 'Hispanic_Origin,Hispanic_Origin_Recode\n')
 
 outStr = ""
 
@@ -118,25 +118,25 @@ for line in fileObj:
                
                
                
-               outStr = (Resident_Status +              ', ' + Education +              ', ' + Month_Of_Death +         ', ' + Sex + \
-                         ', ' + Age_Key +               ', ' + Age_Value +              ', ' + Age_Sub_Flag +           ', ' + Age_Recode_52 + \
-                         ', ' + Age_Recode_27 +         ', ' + Age_Recode_12 +          ', ' + Infant_Age_Recode_22 +   ', ' + Place_Of_Death + \
-                         ', ' + Marital_Status +        ', ' + DOW_of_Death +           ', ' + Data_Year +              ', ' + Injured_At_Work +  \
-                         ', ' + Manner_Of_Death +       ', ' + Method_Of_Disposition +  ', ' + Autopsy +                ', ' + Activity_Code + \
-                         ', ' + Place_Of_Causal_Injury +', ' + ICD10 +                  ', ' + Cause_Recode_358 +       ', ' + Cause_Recode_113 +  \
-                         ', ' + Infant_Cause_Recode_130 + ', ' + Cause_Recode_39 +      ', ' + Entity_Axis_Conditions + ', ' + EAC1 + \
-                         ', ' + EAC2 +                  ', ' + EAC3 +                   ', ' + EAC4 +                   ', ' + EAC5 + \
-                         ', ' + EAC6 +                  ', ' + EAC7 +                   ', ' + EAC8 +                   ', ' + EAC9 + \
-                         ', ' + EAC10 +                 ', ' + EAC11 +                  ', ' + EAC12 +                  ', ' + EAC13 + \
-                         ', ' + EAC14 +                 ', ' + EAC15 +                  ', ' + EAC16 +                  ', ' + EAC17 + \
-                         ', ' + EAC18 +                 ', ' + EAC19 +                  ', ' + EAC20 +                  ', ' + Record_Axis_Conditions + \
-                         ', ' + RA1 +                   ', ' + RA2 +                    ', ' + RA3 +                    ', ' + RA4 + \
-                         ', ' + RA5 +                   ', ' + RA6 +                    ', ' + RA7 +                    ', ' + RA8 + \
-                         ', ' + RA9 +                   ', ' + RA10 +                   ', ' + RA11 +                   ', ' + RA12 + \
-                         ', ' + RA13 +                  ', ' + RA14 +                   ', ' + RA15 +                   ', ' + RA16 + \
-                         ', ' + RA17 +                  ', ' + RA18 +                   ', ' + RA19 +                   ', ' + RA20 + \
-                         ', ' + Race +                  ', ' + Race_Bridged +           ', ' + Race_Imputation +        ', ' + Race_Recode_3 + \
-                         ', ' + Race_Recode_5 +         ', ' + Hispanic_Origin +        ', ' + Hispanic_Origin_Recode + '\n')
+               outStr = (Resident_Status +              ',' + Education +              ',' + Month_Of_Death +         ',' + Sex + \
+                         ',' + Age_Key +               ',' + Age_Value +              ',' + Age_Sub_Flag +           ',' + Age_Recode_52 + \
+                         ',' + Age_Recode_27 +         ',' + Age_Recode_12 +          ',' + Infant_Age_Recode_22 +   ',' + Place_Of_Death + \
+                         ',' + Marital_Status +        ',' + DOW_of_Death +           ',' + Data_Year +              ',' + Injured_At_Work +  \
+                         ',' + Manner_Of_Death +       ',' + Method_Of_Disposition +  ',' + Autopsy +                ',' + Activity_Code + \
+                         ',' + Place_Of_Causal_Injury +',' + ICD10 +                  ',' + Cause_Recode_358 +       ',' + Cause_Recode_113 +  \
+                         ',' + Infant_Cause_Recode_130 + ',' + Cause_Recode_39 +      ',' + Entity_Axis_Conditions + ',' + EAC1 + \
+                         ',' + EAC2 +                  ',' + EAC3 +                   ',' + EAC4 +                   ',' + EAC5 + \
+                         ',' + EAC6 +                  ',' + EAC7 +                   ',' + EAC8 +                   ',' + EAC9 + \
+                         ',' + EAC10 +                 ',' + EAC11 +                  ',' + EAC12 +                  ',' + EAC13 + \
+                         ',' + EAC14 +                 ',' + EAC15 +                  ',' + EAC16 +                  ',' + EAC17 + \
+                         ',' + EAC18 +                 ',' + EAC19 +                  ',' + EAC20 +                  ',' + Record_Axis_Conditions + \
+                         ',' + RA1 +                   ',' + RA2 +                    ',' + RA3 +                    ',' + RA4 + \
+                         ',' + RA5 +                   ',' + RA6 +                    ',' + RA7 +                    ',' + RA8 + \
+                         ',' + RA9 +                   ',' + RA10 +                   ',' + RA11 +                   ',' + RA12 + \
+                         ',' + RA13 +                  ',' + RA14 +                   ',' + RA15 +                   ',' + RA16 + \
+                         ',' + RA17 +                  ',' + RA18 +                   ',' + RA19 +                   ',' + RA20 + \
+                         ',' + Race +                  ',' + Race_Bridged +           ',' + Race_Imputation +        ',' + Race_Recode_3 + \
+                         ',' + Race_Recode_5 +         ',' + Hispanic_Origin +        ',' + Hispanic_Origin_Recode + '\n')
 
 
                
