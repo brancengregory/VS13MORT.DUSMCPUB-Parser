@@ -22,8 +22,8 @@
 #
 
 
-fileObj = open("./VS16MORT.DUSMCPUB",'r')
-fileOutObj = open("./VS16MORT.csv","a")
+fileObj = open("./VS06MORT.DUSMCPUB",'r')
+fileOutObj = open("./VS06MORT.csv","a")
 
 fileOutObj.write('Resident_Status,Education,Month_Of_Death,Sex,Age_Key,Age_Value,Age_Sub_Flag,Age_Recode_52,Age_Recode_27,' + \
                  'Age_Recode_12,Infant_Age_Recode_22,Place_Of_Death,Marital_Status,DOW_of_Death,Data_Year,Injured_At_Work,' + \
